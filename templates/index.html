@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Health Assessment - Home</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Website Title -->
+  <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Heart Health Assessment</span></h2>
+    <div class='description'>
+      <p>Professional cardiovascular risk assessment tool powered by advanced machine learning technology.</p>
+      <p class="accuracy-note">Clinical accuracy: 80% | AI-powered diagnosis</p>
+    </div>
+  </div>
+
+  <!-- Introduction Section -->
+  <div class="intro-section">
+    <div class="intro-content">
+      <h2>Welcome to Heart Health Assessment</h2>
+      <p class="intro-text">
+        Our advanced cardiovascular risk assessment tool utilizes state-of-the-art machine learning algorithms 
+        to analyze your health parameters and provide insights into your heart health status. Early detection 
+        and risk assessment are crucial for maintaining optimal cardiovascular health.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏥</div>
+          <h3>Clinical Accuracy</h3>
+          <p>Powered by advanced machine learning models trained on extensive medical data with 80% accuracy rate.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Quick Assessment</h3>
+          <p>Get instant results based on your health parameters without waiting for appointments or lab results.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Comprehensive Analysis</h3>
+          <p>Analyzes multiple cardiovascular risk factors including blood pressure, cholesterol, and ECG parameters.</p>
+        </div>
+      </div>
+
+      <div class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h4>Enter Your Health Data</h4>
+            <p>Provide your medical information including age, blood pressure, cholesterol levels, and other relevant parameters.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h4>AI Analysis</h4>
+            <p>Our machine learning algorithm processes your data using advanced predictive models trained on medical datasets.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h4>Get Your Results</h4>
+            <p>Receive an instant assessment of your cardiovascular health risk status based on the analysis.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h2>Ready to Assess Your Heart Health?</h2>
+        <p>Take a few minutes to complete our comprehensive health assessment form.</p>
+        <a href="{{ url_for('assessment_form') }}" class="cta-button">Start Assessment</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us Section -->
+  <div class="contact-section">
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      <p class="contact-intro">Have questions or need assistance? We're here to help.</p>
+      
+      <div class="contact-info-grid">
+        <div class="contact-info-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p>health@heartassessment.com</p>
+          <p>support@heartassessment.com</p>
+        </div>
+        
+        <div class="contact-info-card">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p>+1 (555) 123-4567</p>
+          <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+        </div>
+        
+        <div class="contact-info-card">
+          <div class="contact-icon">📍</div>
+          <h3>Address</h3>
+          <p>123 Medical Center Drive</p>
+          <p>Healthcare City, HC 12345</p>
+        </div>
+        
+        <div class="contact-info-card">
+          <div class="contact-icon">⏰</div>
+          <h3>Business Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 2:00 PM</p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h3>Send us a Message</h3>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="contact-submit-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class='footer'>
+    <p class='footer-description'>© 2025 Heart Health Assessment. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
+

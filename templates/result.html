@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Heart Health Assessment - Results</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+		<!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Heart Health Assessment</span></h2>
+            <div class='description'>
+    			<p>Professional cardiovascular risk assessment results</p>
+    			<a href="{{ url_for('home') }}" class="back-link">← Back to Home</a>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>Oops! You have Chances of Heart Disease.</span></h1>
+				
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T chances have Heart Disease.</span></h1>
+				
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+       <div class='footer'>
+           <p class='footer-description'>© 2024 Heart Health Assessment. All rights reserved.</p>
+       </div>
+
+	</body>
+</html>
